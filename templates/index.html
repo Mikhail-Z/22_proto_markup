@@ -1,0 +1,135 @@
+<!-- Navigation -->
+{% extends  "_base.html"%}
+{% block content %}
+<!-- Page Content -->
+<div class="container">
+    <div class="row">
+        <div class="col-lg-9 col-md-offset-2 text-center">
+          <div class="col-sm-4">
+            <h4>Участники в Новосибирске:</h4>
+          </div>
+          <div class="col-sm-4">
+            <h4>
+              <a href="./catalog_main.html"><u>{{companies_count}} оптовых компаний</u></a>
+            </h4>
+          </div>
+          <div class="col-sm-4">
+            <h4>
+              <a href="./catalog_main.html"><u>{{manufacturers_count}} производителей</u></a>
+            </h4>
+          </div>
+        </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-8 col-md-offset-2 text-center">
+        <h2>
+          Лучшие поставщики Новосибирска
+        </h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-8 col-md-offset-2">
+        <div style="background-color: gainsboro; padding: 4%; border-style: solid; border-color: black">
+          <h4>Я ищу</h4>
+          <form class="form-horizontal">
+            <div class="form-group">
+              <div class="col-md-offset-2">
+                <div class="checkbox">
+                  <label><input type="checkbox"> ЖБИ (фундаментальные блоки ФБС, плиты перекрытий ПК, перемычки</label>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-md-offset-2">
+                <div class="checkbox">
+                  <label><input type="checkbox">Кирпич/Газобетон/Брус</label>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-md-offset-2">
+                <div class="checkbox">
+                  <label><input type="checkbox">Бетон/Раствор</label>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-md-offset-2">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#"><u>{{current_city}}</u><span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  {%for city in cities%}
+                    <li><a href="#">{{city}}</a></li>
+                  {%endfor%}
+                </ul>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-md-2" style="text-align: right">
+                <label for="comment">Описание*</label>
+              </div>
+              <div class="col-md-10">
+                <textarea class="form-control" id="comment" rows="3"></textarea>
+                <small>Например: нужно ФБС 24.4.60 50 штук плиты 20 ПК 60-20-12 доставка в Новолуговое</small>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-md-2" style="text-align: right" for="telephone">Телефон*</label>
+                <div class="col-md-4">
+                  <input type="text" id="telephone" class="form-control">
+                </div>
+              <label class="col-md-2" style="text-align: right" for="first_name">Имя</label>
+                <div class="col-md-4">
+                  <input class="form-control" id="first_name">
+                </div>
+            </div>
+            <div class="text-center">
+              <button type="submit" class="btn btn-default btn-lg">Опубликовать заявку</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <h2>
+          Новые заявки
+        </h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-8 col-md-offset-2">
+        <div class="row">
+          <div class="col-md-4">
+          Раздел: <a class="dropdown-toggle" data-toggle="dropdown" href="#"><u>Все</u><span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Новые</a></li>
+                <li><a href="#">Просмотренные</a></li>
+              </ul>
+          </div>
+          <div class="col-md-4 col-md-offset-4 text-right">
+            Регион: <a class="dropdown-toggle" data-toggle="dropdown" href="#"><u>{{current_city}}</u><span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              {% for city in cities %}
+                <li><a href="#">{{city}}</a></li>
+              {%endfor%}
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-8 col-md-offset-2">
+        <hr/>
+      </div>
+    </div>
+    {% include "_requests.html" %}
+  <div class="text-center">
+      <a href="./zajavki.html" class="btn btn-default" role="button">Опубликовать все записи</a>
+    {% include "_carousel_msg.html" %}
+  </div>
+  </div>
+</div>
+
+{% include "_footer.html" %}
+{% endblock %}

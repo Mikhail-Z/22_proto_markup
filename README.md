@@ -1,7 +1,9 @@
-# Suppliers in Novosibirsk
+# Поставщики Новосибирска
 
-[TODO. There will be project description]
+Это прототип сайта для продажи строительной продукции. Попробуйте: 
+Разметка страниц проверена с помощью W3C validator
 
-# Project Goals
+### Как с этим работать
 
-The code is written for educational purposes. Training course for web-developers - [DEVMAN.org](https://devman.org)
+После изменений в исходниках пересоберите сайт. Для этого введите: `python make_site.py`.
+После этого в папке **docs** появятся сгенерирированные странички.

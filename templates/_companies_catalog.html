@@ -1,0 +1,21 @@
+<div class="col-md-8 col-md-offset-2">
+  <table class="table table-condensed">
+    <tbody>
+    {% for company in companies %}
+      <tr>
+        <td class="col-md-3">
+          <img alt="Логотип" src="./../static/img/home_icon_100x100.png">
+        </td>
+        <td>
+          <h4><a href="./catalog_end_page.html">{{company['name']}}</a></h4>
+
+          <p><b>Место деятельности: </b>{{company['place']}}</p>
+          <p><b>Продукция: </b>{{company['product']}}</p>
+          <p><b>Адрес: </b>{{company['address']}}</p>
+          <p><b>Телефон: </b>{{company['telephone']}}</p>
+        </td>
+      </tr>
+    {% endfor %}
+    </tbody>
+  </table>
+</div>

@@ -1,0 +1,299 @@
+<!-- Navigation -->
+<!DOCTYPE html>
+<html lang="ru">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Bare - Start Bootstrap Template</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../static/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../static/css/my.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Custom CSS -->
+    <style>
+    body {
+        padding-top: 70px;
+        /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+    }
+    </style>
+
+</head>
+<body>
+  <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="#">Регион:</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Новосибирск <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                
+                  <li><a href="#">Кемерово</a></li>
+                
+                  <li><a href="#">Красноярск</a></li>
+                
+                  <li><a href="#">Новосибирск</a></li>
+                
+                  <li><a href="#">Омск</a></li>
+                
+                  <li><a href="#">Томск</a></li>
+                
+              </ul>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="./profile.html">Вася Пупкин</a></li>
+            <li><a href="#">Выйти</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+    
+<!-- Page Content -->
+<div class="container">
+    <div class="row">
+        <div class="col-lg-9 col-md-offset-2 text-center">
+          <div class="col-sm-4">
+            <h4>Участники в Новосибирске:</h4>
+          </div>
+          <div class="col-sm-4">
+            <h4>
+              <a href="./catalog_main.html"><u>105 оптовых компаний</u></a>
+            </h4>
+          </div>
+          <div class="col-sm-4">
+            <h4>
+              <a href="./catalog_main.html"><u>25 производителей</u></a>
+            </h4>
+          </div>
+        </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-8 col-md-offset-2 text-center">
+        <h2>
+          Лучшие поставщики Новосибирска
+        </h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-8 col-md-offset-2">
+        <div style="background-color: gainsboro; padding: 4%; border-style: solid; border-color: black">
+          <h4>Я ищу</h4>
+          <form class="form-horizontal">
+            <div class="form-group">
+              <div class="col-md-offset-2">
+                <div class="checkbox">
+                  <label><input type="checkbox"> ЖБИ (фундаментальные блоки ФБС, плиты перекрытий ПК, перемычки</label>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-md-offset-2">
+                <div class="checkbox">
+                  <label><input type="checkbox">Кирпич/Газобетон/Брус</label>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-md-offset-2">
+                <div class="checkbox">
+                  <label><input type="checkbox">Бетон/Раствор</label>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-md-offset-2">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#"><u>Новосибирск</u><span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  
+                    <li><a href="#">Кемерово</a></li>
+                  
+                    <li><a href="#">Красноярск</a></li>
+                  
+                    <li><a href="#">Новосибирск</a></li>
+                  
+                    <li><a href="#">Омск</a></li>
+                  
+                    <li><a href="#">Томск</a></li>
+                  
+                </ul>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-md-2" style="text-align: right">
+                <label for="comment">Описание*</label>
+              </div>
+              <div class="col-md-10">
+                <textarea class="form-control" id="comment" rows="3"></textarea>
+                <small>Например: нужно ФБС 24.4.60 50 штук плиты 20 ПК 60-20-12 доставка в Новолуговое</small>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-md-2" style="text-align: right" for="telephone">Телефон*</label>
+                <div class="col-md-4">
+                  <input type="text" id="telephone" class="form-control">
+                </div>
+              <label class="col-md-2" style="text-align: right" for="first_name">Имя</label>
+                <div class="col-md-4">
+                  <input class="form-control" id="first_name">
+                </div>
+            </div>
+            <div class="text-center">
+              <button type="submit" class="btn btn-default btn-lg">Опубликовать заявку</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <h2>
+          Новые заявки
+        </h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-8 col-md-offset-2">
+        <div class="row">
+          <div class="col-md-4">
+          Раздел: <a class="dropdown-toggle" data-toggle="dropdown" href="#"><u>Все</u><span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Новые</a></li>
+                <li><a href="#">Просмотренные</a></li>
+              </ul>
+          </div>
+          <div class="col-md-4 col-md-offset-4 text-right">
+            Регион: <a class="dropdown-toggle" data-toggle="dropdown" href="#"><u>Новосибирск</u><span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              
+                <li><a href="#">Кемерово</a></li>
+              
+                <li><a href="#">Красноярск</a></li>
+              
+                <li><a href="#">Новосибирск</a></li>
+              
+                <li><a href="#">Омск</a></li>
+              
+                <li><a href="#">Томск</a></li>
+              
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-8 col-md-offset-2">
+        <hr/>
+      </div>
+    </div>
+    <div class="row">
+  <div class="col-lg-8 col-md-offset-2">
+    <div class="col-md-4 text-left">
+      Вчера, в 21:30
+    </div>
+    <div class="text-right">
+      <a href="#">
+        <span class="glyphicon glyphicon-star"></span>
+      <u>В закладки</u>
+      </a>
+    </div>
+    <p style="padding-top: 3%">
+      60шт. ПК от 72-15 до ПК 21-15 можно без сахара. Каргат, с доставкой до порога.
+    </p>
+    <footer style="padding-bottom: 4%">Алексей</footer>
+    <div class="row">
+    <div class="col-md-6">
+      <button class="btn btn-default">Посмотреть телефон</button>
+      <small>12 просмотров</small>
+    </div>
+    </div>
+    <hr/>
+  </div>
+</div>
+  <div class="text-center">
+      <a href="./zajavki.html" class="btn btn-default" role="button">Опубликовать все записи</a>
+    <div class="row" style="margin-top: 3%">
+  <div class="col-md-1 col-md-offset-3 text-right" style="margin-top: 2%">
+    <a href="#"><span class="glyphicon glyphicon-arrow-left" id="prev-review"></span></a>
+  </div>
+  <div class="col-md-4" style="border-style: solid; border-width: 2px">
+    <div class="row">
+      <div class="col-md-2" style="margin-top: 2%">
+        <img src="./../static/img/avatar_100x100.png" style="width: 50px">
+      </div>
+      <div class="col-md-10" id="review">
+
+      </div>
+    </div>
+  </div>
+  <div class="col-md-1 text-left" style="margin-top: 2%">
+    <a href="#"><span class="glyphicon glyphicon-arrow-right" id="next-review"></span></a>
+  </div>
+</div>
+<script src="./../static/js/reviews_changer.js"></script>
+  </div>
+  </div>
+</div>
+
+<div style="background-color: gainsboro; width: 100%; margin-top: 5%; padding: 4px; border-left-width: 0px;
+      border-right-width: 0px; border-bottom-width: 0px; border-style: solid; border-color: black">
+  <div class="container">
+  <div class="text-center">
+    <h2>Вы поставщик?</h2>
+  </div>
+    <div class="row">
+      <div class="col-lg-6" style="padding: 4%">
+        <p>Для доступа к телефонам покупателей заполните форму или позвоните нам +7 999 888 77 66</p>
+        <p>Текст с дополнительной информацией по условиям сотрудничества. Возможно стоит вынести
+          на отдельную страницу Текст с дополнительной информацией по условиям сотрудничества.
+          Возможно стоит вынести на отдельную страницу.</p>
+      </div>
+      <div class="col-lg-6" style="padding: 4%">
+        <form>
+          <div class="form-group">
+            <label for="organization">Организация</label>
+            <input id="organization" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="telephone2">Телефон</label>
+            <input id="telephone2" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="first_name2">Имя</label>
+            <input id="first_name2" class="form-control">
+          </div>
+          <button type="submit" class="btn btn-default">Отправить информацию</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- jQuery Version 1.11.1 -->
+    <script src="./../static/js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="./../static/js/bootstrap.min.js"></script>
+</body>

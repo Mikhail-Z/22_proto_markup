@@ -1,0 +1,52 @@
+{%extends "_base.html"%}
+{% block content %}
+<div class="container" style="margin: 3%">
+  <div class="row">
+    <div class="col-md-2">
+      <img alt="Логотип" src="./../static/img/home_icon_100x100.png">
+    </div>
+    <div class="col-md-10">
+      <p><a href="./index.html"><u>Главная</u></a><span class="glyphicon glyphicon-chevron-right"></span>Каталог организаций</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-offset-2 col-sm-4">
+      <img alt="ЖБИ" src="./../static/img/material.png">
+      <div class="caption">
+        <h4><a href="./catalog_list.html"><u>ЖБИ</u></a></h4>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <img alt="ЖБИ" src="./../static/img/material.png">
+      <div class="caption>">
+        <h4><u>Кирпич/газобетон/брус</u></h4>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-offset-2 col-sm-4">
+      <img alt="ЖБИ" src="./../static/img/material.png">
+      <div class="caption">
+        <h4><u>Что-то ещё</u></h4>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <img alt="ЖБИ" src="./../static/img/material.png">
+      <div class="caption>">
+        <h4><u>Что-то ещё</u></h4>
+      </div>
+    </div>
+  </div>
+  <div class="row text-center">
+    <h3>Все производители и оптовые компании</h3>
+  </div>
+
+  <div class="row">
+    {% include "_companies_catalog.html" %}
+    <div class="col-md-2 text-center" style="margin: inherit">
+      <button class="btn btn-default">Оставить заявку</button>
+    </div>
+  </div>
+  </div>
+{% include "_footer.html" %}}
+{% endblock %}

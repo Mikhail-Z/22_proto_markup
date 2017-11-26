@@ -1,0 +1,43 @@
+{%extends "_base.html"%}
+{%block content%}
+<link href="./../static/css/tabs.css" rel="stylesheet">
+<link href="./../static/css/tabs.sideways.css" rel="stylesheet">
+<div class="container" style="margin: 3%">
+  <div class="row">
+    <div class="col-md-2">
+      <img alt="Логотип" src="./../static/img/home_icon_100x100.png">
+    </div>
+    <div class="col-md-10">
+      <p><a href="./index.html"><u>Главная</u></a><span class="glyphicon glyphicon-chevron-right"></span>Личный кабинет</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-offset-2 col-md-4">
+      <h3>Личный кабинет</h3>
+    </div>
+    <div class= "col-md-4 text-right">
+        <a href="#"><u>Перейти к заявкам</u></a>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-2"> <!-- required for floating -->
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs tabs-left">
+          <li class="active"><a href="#" data-toggle="tab">Моя организация</a></li>
+          <li><a href="#" data-toggle="tab">Смена пароля</a></li>
+          <li><a href="#" data-toggle="tab">Рассылка</a></li>
+        </ul>
+    </div>
+
+    <div class="col-xs-8" >
+        <!-- Tab panes -->
+        <div class="tab-content">
+          <div class="tab-pane active" id="my_org_tab"></div>
+          <div class="tab-pane" id="password_change_tab"></div>
+          <div class="tab-pane" id="sendings_tab"></div>
+        </div>
+    </div>
+  </div>
+</div>
+{%include "_footer.html"%}
+{%endblock%}
