@@ -1,12 +1,13 @@
 {%extends "_base.html"%}
 {% block content %}
-<div class="row">
-  <div class="col-lg-8 col-lg-offset-2" style="padding: 15px; border: 1px solid transparent; border-color: black">
-        <div class="row">
-          <div class="col-lg-2">
+<div class="container">
+  <div class="col-md-8 col-md-offset-2 panel panel-default" style="padding: 5px; border: 1px solid transparent; border-color: black">
+    <div class="panel-body">
+    <div class="row">
+          <div class="col-md-2">
             <img alt="Логотип" src="./../static/img/home_icon_100x100.png">
           </div>
-          <div class="col-lg-10">
+          <div class="col-md-10">
             <p>
               <a href="./index.html"><u>Главная</u></a>
               <span class="glyphicon glyphicon-chevron-right"></span><a href="./catalog_main.html"><u>Каталог организаций</u></a>
@@ -14,20 +15,21 @@
               <span class="glyphicon glyphicon-chevron-right"></span>Строй-Сервис-Монтаж
             </p>
           </div>
-          <div class="col-lg-10">
+          <div class="col-md-10">
             <h3>{{company_name}}</h3>
           </div>
         </div>
         <div class="row" style="padding: 2%">
-          <div class="col-lg-6 col-lg-offset-2">
+          <div class="col-md-6 col-md-offset-2">
             <p><b>Место деятельности: </b>{{place}}</p>
             <p><b>Продукция: </b>{{production}}</p>
             <p><b>Адрес: </b>{{address}}</p>
             <p><b>Телефон: </b>{{telephone}}</p>
           </div>
-          <div class="col-lg-4 text-center">
+          <div class="col-md-4 text-center">
             <button class="btn btn-default">
-              Оставить заявку этой компании
+              Оставить заявку
+              этой компании
             </button>
           </div>
         </div>
@@ -63,6 +65,7 @@
         <div style="margin-top: 2%">
           <a href="#"><u>Оставить заявку этой компании</u></a>
         </div>
+      </div>
   </div>
 </div>
 {% include "_footer.html" %}

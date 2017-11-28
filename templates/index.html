@@ -4,7 +4,7 @@
 <!-- Page Content -->
 <div class="container">
     <div class="row">
-        <div class="col-lg-9 col-md-offset-2 text-center">
+        <div class="col-md-9 col-md-offset-2 text-center">
           <div class="col-sm-4">
             <h4>Участники в Новосибирске:</h4>
           </div>
@@ -21,15 +21,15 @@
         </div>
     </div>
     <div class="row">
-      <div class="col-lg-8 col-md-offset-2 text-center">
+      <div class="col-md-8 col-md-offset-2 text-center">
         <h2>
           Лучшие поставщики Новосибирска
         </h2>
       </div>
     </div>
     <div class="row">
-      <div class="col-lg-8 col-md-offset-2">
-        <div style="background-color: gainsboro; padding: 4%; border-style: solid; border-color: black">
+      <div class="col-md-8 col-md-offset-2 panel panel-default" style="background-color: gainsboro; padding: 4%; border-style: solid;  border-width: 2px; border-color: black">
+        <div class="panel-body">
           <h4>Я ищу</h4>
           <form class="form-horizontal">
             <div class="form-group">
@@ -64,8 +64,8 @@
               </div>
             </div>
             <div class="form-group">
-              <div class="col-md-2" style="text-align: right">
-                <label for="comment">Описание*</label>
+              <div class="col-md-2">
+                <label class="col-md-2" style="text-align: right" for="comment">Описание*</label>
               </div>
               <div class="col-md-10">
                 <textarea class="form-control" id="comment" rows="3"></textarea>
@@ -86,7 +86,7 @@
               <button type="submit" class="btn btn-default btn-lg">Опубликовать заявку</button>
             </div>
           </form>
-        </div>
+      </div>
       </div>
     </div>
   <div class="container">
@@ -98,7 +98,7 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-lg-8 col-md-offset-2">
+      <div class="col-md-8 col-md-offset-2">
         <div class="row">
           <div class="col-md-4">
           Раздел: <a class="dropdown-toggle" data-toggle="dropdown" href="#"><u>Все</u><span class="caret"></span></a>
@@ -119,15 +119,15 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-lg-8 col-md-offset-2">
+      <div class="col-md-8 col-md-offset-2">
         <hr/>
       </div>
     </div>
     {% include "_requests.html" %}
   <div class="text-center">
       <a href="./zajavki.html" class="btn btn-default" role="button">Опубликовать все записи</a>
-    {% include "_carousel_msg.html" %}
   </div>
+    {% include "_carousel_msg.html" %}
   </div>
 </div>
 

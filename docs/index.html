@@ -13,8 +13,7 @@
     <title>Bare - Start Bootstrap Template</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="../static/css/bootstrap.min.css" rel="stylesheet">
-    <link href="../static/css/my.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">    <link href="../static/css/my.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- Custom CSS -->
     <style>
@@ -27,7 +26,7 @@
 </head>
 <body>
   <!-- Navigation -->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -61,14 +60,14 @@
             <li><a href="./profile.html">Вася Пупкин</a></li>
             <li><a href="#">Выйти</a></li>
           </ul>
-        </div><!--/.nav-collapse -->
+        </div>
       </div>
     </nav>
     
 <!-- Page Content -->
 <div class="container">
     <div class="row">
-        <div class="col-lg-9 col-md-offset-2 text-center">
+        <div class="col-md-9 col-md-offset-2 text-center">
           <div class="col-sm-4">
             <h4>Участники в Новосибирске:</h4>
           </div>
@@ -85,15 +84,15 @@
         </div>
     </div>
     <div class="row">
-      <div class="col-lg-8 col-md-offset-2 text-center">
+      <div class="col-md-8 col-md-offset-2 text-center">
         <h2>
           Лучшие поставщики Новосибирска
         </h2>
       </div>
     </div>
     <div class="row">
-      <div class="col-lg-8 col-md-offset-2">
-        <div style="background-color: gainsboro; padding: 4%; border-style: solid; border-color: black">
+      <div class="col-md-8 col-md-offset-2 panel panel-default" style="background-color: gainsboro; padding: 4%; border-style: solid;  border-width: 2px; border-color: black">
+        <div class="panel-body">
           <h4>Я ищу</h4>
           <form class="form-horizontal">
             <div class="form-group">
@@ -136,8 +135,8 @@
               </div>
             </div>
             <div class="form-group">
-              <div class="col-md-2" style="text-align: right">
-                <label for="comment">Описание*</label>
+              <div class="col-md-2">
+                <label class="col-md-2" style="text-align: right" for="comment">Описание*</label>
               </div>
               <div class="col-md-10">
                 <textarea class="form-control" id="comment" rows="3"></textarea>
@@ -158,7 +157,7 @@
               <button type="submit" class="btn btn-default btn-lg">Опубликовать заявку</button>
             </div>
           </form>
-        </div>
+      </div>
       </div>
     </div>
   <div class="container">
@@ -170,7 +169,7 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-lg-8 col-md-offset-2">
+      <div class="col-md-8 col-md-offset-2">
         <div class="row">
           <div class="col-md-4">
           Раздел: <a class="dropdown-toggle" data-toggle="dropdown" href="#"><u>Все</u><span class="caret"></span></a>
@@ -199,12 +198,72 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-lg-8 col-md-offset-2">
+      <div class="col-md-8 col-md-offset-2">
         <hr/>
       </div>
     </div>
     <div class="row">
-  <div class="col-lg-8 col-md-offset-2">
+  <div class="col-md-8 col-md-offset-2">
+    <div class="col-md-4 text-left">
+      Вчера, в 21:30
+    </div>
+    <div class="text-right">
+      <a href="#">
+        <span class="glyphicon glyphicon-star"></span>
+      <u>В закладки</u>
+      </a>
+    </div>
+    <p style="padding-top: 3%">
+      60шт. ПК от 72-15 до ПК 21-15 можно без сахара. Каргат, с доставкой до порога.
+    </p>
+    <footer style="padding-bottom: 4%">Алексей</footer>
+    <div class="row">
+    <div class="col-md-6">
+      <button class="btn btn-default">Посмотреть телефон</button>
+      <small>12 просмотров</small>
+    </div>
+    </div>
+    <hr/>
+    <div class="col-md-4 text-left">
+      Вчера, в 21:30
+    </div>
+    <div class="text-right">
+      <a href="#">
+        <span class="glyphicon glyphicon-star"></span>
+      <u>В закладки</u>
+      </a>
+    </div>
+    <p style="padding-top: 3%">
+      60шт. ПК от 72-15 до ПК 21-15 можно без сахара. Каргат, с доставкой до порога.
+    </p>
+    <footer style="padding-bottom: 4%">Алексей</footer>
+    <div class="row">
+    <div class="col-md-6">
+      <button class="btn btn-default">Посмотреть телефон</button>
+      <small>12 просмотров</small>
+    </div>
+    </div>
+    <hr/>
+    <div class="col-md-4 text-left">
+      Вчера, в 21:30
+    </div>
+    <div class="text-right">
+      <a href="#">
+        <span class="glyphicon glyphicon-star"></span>
+      <u>В закладки</u>
+      </a>
+    </div>
+    <p style="padding-top: 3%">
+      60шт. ПК от 72-15 до ПК 21-15 можно без сахара. Каргат, с доставкой до порога.
+    </p>
+    <footer style="padding-bottom: 4%">Алексей</footer>
+    <div class="row">
+    <div class="col-md-6">
+      <button class="btn btn-default">Посмотреть телефон</button>
+      <small>12 просмотров</small>
+    </div>
+    </div>
+    <hr/>
     <div class="col-md-4 text-left">
       Вчера, в 21:30
     </div>
@@ -229,7 +288,39 @@
 </div>
   <div class="text-center">
       <a href="./zajavki.html" class="btn btn-default" role="button">Опубликовать все записи</a>
-    <div class="row" style="margin-top: 3%">
+  </div>
+    <div class="col-md-8 col-md-offset-2 ">
+  <div id="text-carousel" class="carousel slide" data-ride="carousel">
+      <!-- Wrapper for slides -->
+      <div class="row">
+          <div class="col-md-8 col-md-offset-2">
+              <div class="carousel-inner">
+                  <div class="item active">
+                      <div class="carousel-content">
+                          <div class="col-md-2" style="margin-top: 2%">
+                            <img src="./../static/img/avatar_100x100.png" alt="Фото клиента" style="width: 50px">
+                          </div>
+                          <div class="col-md-10" id="review">
+
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+    <a class="left carousel-control" id="next-review" style="background: white !important" href="#text-carousel" data-slide="prev">
+       <span class="glyphicon glyphicon-chevron-left"></span>
+    </a>
+   <a class="right carousel-control" id="prev-review" href="#text-carousel" style="background: white !important" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+    </a>
+
+  </div>
+</div>
+<script src="./../static/js/reviews_changer.js"></script>
+
+<!--
+<div class="wrapper" style="margin-top: 3%">
   <div class="col-md-1 col-md-offset-3 text-right" style="margin-top: 2%">
     <a href="#"><span class="glyphicon glyphicon-arrow-left" id="prev-review"></span></a>
   </div>
@@ -247,8 +338,7 @@
     <a href="#"><span class="glyphicon glyphicon-arrow-right" id="next-review"></span></a>
   </div>
 </div>
-<script src="./../static/js/reviews_changer.js"></script>
-  </div>
+-->
   </div>
 </div>
 
@@ -259,13 +349,13 @@
     <h2>Вы поставщик?</h2>
   </div>
     <div class="row">
-      <div class="col-lg-6" style="padding: 4%">
+      <div class="col-md-6" style="padding: 4%">
         <p>Для доступа к телефонам покупателей заполните форму или позвоните нам +7 999 888 77 66</p>
         <p>Текст с дополнительной информацией по условиям сотрудничества. Возможно стоит вынести
           на отдельную страницу Текст с дополнительной информацией по условиям сотрудничества.
           Возможно стоит вынести на отдельную страницу.</p>
       </div>
-      <div class="col-lg-6" style="padding: 4%">
+      <div class="col-md-6" style="padding: 4%">
         <form>
           <div class="form-group">
             <label for="organization">Организация</label>
@@ -291,9 +381,7 @@
 </div>
 
 
-<!-- jQuery Version 1.11.1 -->
-    <script src="./../static/js/jquery.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="./../static/js/bootstrap.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
