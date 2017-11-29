@@ -22,7 +22,7 @@ function updateTextOnPage() {
 }
 
 
-$.getJSON("./../reviews.json", function (json) {
+$.getJSON("reviews.json", function (json) {
   JSON_DATA_LIST = json;
   insertTagsOnPage();
   updateTextOnPage();
