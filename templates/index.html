@@ -97,24 +97,23 @@
         </h2>
       </div>
     </div>
+
     <div class="row">
       <div class="col-md-8 col-md-offset-2">
-        <div class="row">
-          <div class="col-md-4">
-          Раздел: <a class="dropdown-toggle" data-toggle="dropdown" href="#"><u>Все</u><span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="#">Новые</a></li>
-                <li><a href="#">Просмотренные</a></li>
-              </ul>
-          </div>
-          <div class="col-md-4 col-md-offset-4 text-right">
-            Регион: <a class="dropdown-toggle" data-toggle="dropdown" href="#"><u>{{current_city}}</u><span class="caret"></span></a>
+        <div class="dropdown col-md-8">Раздел:
+          <a href="#" data-toggle="dropdown" class="dropdown-toggle">Все<b class="caret"></b></a>
             <ul class="dropdown-menu">
-              {% for city in cities %}
-                <li><a href="#">{{city}}</a></li>
-              {%endfor%}
+              <li><a href="#">Новые</a></li>
+              <li><a href="#">Просмотренные</a></li>
             </ul>
-          </div>
+        </div>
+        <div class="dropdown col-md-4">Регион:
+          <a href="#"  data-toggle="dropdown" class="dropdown-toggle">{{current_city}}<b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            {% for city in cities %}
+              <li><a href="#">{{city}}</a></li>
+            {%endfor%}
+          </ul>
         </div>
       </div>
     </div>
