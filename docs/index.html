@@ -10,14 +10,14 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Bare - Start Bootstrap Template</title>
+    <title>Поставщики Новосибирска</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="static/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <!-- Custom CSS -->
-    <link href="static/css/my.css" rel="stylesheet">
+    <link href="./static/css/my.css" rel="stylesheet">
 
-    <script src="static/js/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 
     <style>
@@ -208,74 +208,16 @@
     
 <div class="row">
   <div class="col-md-8 col-md-offset-2">
-    <div class="col-md-4 text-left">
-      Вчера, в 21:30
-    </div>
-    <div class="text-right">
-      <a href="#">
-        <span class="glyphicon glyphicon-star"></span>
-      <u>В закладки</u>
-      </a>
-    </div>
-    <p style="padding-top: 3%">
-      60шт. ПК от 72-15 до ПК 21-15 можно без сахара. Каргат, с доставкой до порога.
-    </p>
-    <footer style="padding-bottom: 4%">Алексей</footer>
     <div class="row">
-    <div class="col-md-6">
-      <button class="btn btn-default">Посмотреть телефон</button>
-      <small>12 просмотров</small>
-    </div>
-    </div>
-    <hr/>
-    <div class="col-md-4 text-left">
-      Вчера, в 21:30
-    </div>
-    <div class="text-right">
-      <a href="#">
-        <span class="glyphicon glyphicon-star"></span>
-      <u>В закладки</u>
-      </a>
-    </div>
-    <p style="padding-top: 3%">
-      60шт. ПК от 72-15 до ПК 21-15 можно без сахара. Каргат, с доставкой до порога.
-    </p>
-    <footer style="padding-bottom: 4%">Алексей</footer>
-    <div class="row">
-    <div class="col-md-6">
-      <button class="btn btn-default">Посмотреть телефон</button>
-      <small>12 просмотров</small>
-    </div>
-    </div>
-    <hr/>
-    <div class="col-md-4 text-left">
-      Вчера, в 21:30
-    </div>
-    <div class="text-right">
-      <a href="#">
-        <span class="glyphicon glyphicon-star"></span>
-      <u>В закладки</u>
-      </a>
-    </div>
-    <p style="padding-top: 3%">
-      60шт. ПК от 72-15 до ПК 21-15 можно без сахара. Каргат, с доставкой до порога.
-    </p>
-    <footer style="padding-bottom: 4%">Алексей</footer>
-    <div class="row">
-    <div class="col-md-6">
-      <button class="btn btn-default">Посмотреть телефон</button>
-      <small>12 просмотров</small>
-    </div>
-    </div>
-    <hr/>
-    <div class="col-md-4 text-left">
-      Вчера, в 21:30
-    </div>
-    <div class="text-right">
-      <a href="#">
-        <span class="glyphicon glyphicon-star"></span>
-      <u>В закладки</u>
-      </a>
+      <div class="col-xs-4" style="display: inline-block">
+        Вчера, в 21:30
+      </div>
+      <div class="col-xs-8 text-right" style="display:inline-block">
+        <a href="#">
+          <span class="glyphicon glyphicon-star"></span>
+        <u>В закладки</u>
+        </a>
+      </div>
     </div>
     <p style="padding-top: 3%">
       60шт. ПК от 72-15 до ПК 21-15 можно без сахара. Каргат, с доставкой до порога.
@@ -293,7 +235,8 @@
   <div class="text-center">
       <a href="./zajavki.html" class="btn btn-default" role="button">Опубликовать все записи</a>
   </div>
-    <div class="col-md-8 col-md-offset-2 ">
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2 ">
   <div id="text-carousel" class="carousel slide" data-ride="carousel">
       <!-- Wrapper for slides -->
       <div class="row">
@@ -301,12 +244,14 @@
               <div class="carousel-inner">
                   <div class="item active">
                       <div class="carousel-content">
+                        <div class="col-md-12">
                           <div class="col-md-2" style="margin-top: 2%">
-                            <img src="static/img/avatar_100x100.png" alt="Фото клиента" style="width: 50px">
+                            <img src="./static/img/avatar_100x100.png" alt="Фото клиента" style="width: 50px">
                           </div>
                           <div class="col-md-10" id="review">
 
                           </div>
+                        </div>
                       </div>
                   </div>
               </div>
@@ -322,6 +267,8 @@
   </div>
 </div>
 <script src="static/js/reviews_changer.js"></script>
+      <a href="#"><button class="btn-default">Оставить отзыв</button></a>
+    </div>
   </div>
 </div>
 
@@ -333,7 +280,8 @@
   </div>
     <div class="row">
       <div class="col-md-6" style="padding: 4%">
-        <p>Для доступа к телефонам покупателей заполните форму или позвоните нам +7 999 888 77 66</p>
+        <p>Для доступа к телефонам покупателей заполните форму или позвоните нам
+        <span class="text-nowrap">+7 999 888 77 66</span></p>
         <p>Текст с дополнительной информацией по условиям сотрудничества. Возможно стоит вынести
           на отдельную страницу Текст с дополнительной информацией по условиям сотрудничества.
           Возможно стоит вынести на отдельную страницу.</p>
@@ -366,5 +314,5 @@
 
 
     <!-- Bootstrap Core JavaScript -->
-  <script src="./static/js/bootstrap.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>

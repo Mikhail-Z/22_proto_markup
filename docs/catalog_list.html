@@ -9,14 +9,14 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Bare - Start Bootstrap Template</title>
+    <title>Поставщики Новосибирска</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="static/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <!-- Custom CSS -->
-    <link href="static/css/my.css" rel="stylesheet">
+    <link href="./static/css/my.css" rel="stylesheet">
 
-    <script src="static/js/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 
     <style>
@@ -70,12 +70,15 @@
 <div class="container" style="margin: 3%">
   <div class="row">
     <div class="col-md-2">
-      <img alt="Логотип" src="static/img/home_icon_100x100.png">
+      <a href="./index.html"><img alt="Логотип" src="./static/img/home_icon_100x100.png"></a>
     </div>
     <div class="col-md-10">
-      <p>
-        <a href="./index.html"><u>Главная</u></a><span class="glyphicon glyphicon-chevron-right"></span><a href="./catalog_main.html"><u>Каталог организаций</u></a>
-        <span class="glyphicon glyphicon-chevron-right"></span>ЖБИ
+      <p style="padding: 3px">
+        <a style="padding: inherit" href="./index.html"><u>Главная</u></a>
+        <span style="padding: inherit" class="glyphicon glyphicon-chevron-right"></span>
+        <a style="padding: inherit" href="./catalog_main.html"><u>Каталог организаций</u></a>
+        <span style="padding: inherit" class="glyphicon glyphicon-chevron-right"></span>
+        <span style="padding: inherit">ЖБИ</span>
       </p>
     </div>
   </div>
@@ -85,7 +88,7 @@
     </div>
   </div>
   <div class="row">
-    <div class="col-md-offset-2">
+    <div class="col-md-4 col-md-offset-2">
       <h3>ЖБИ</h3>
     </div>
   </div>
@@ -96,7 +99,7 @@
     
       <tr>
         <td class="col-md-3">
-          <img alt="Логотип" src="static/img/home_icon_100x100.png">
+          <img alt="Логотип" src="./static/img/home_icon_100x100.png">
         </td>
         <td>
           <h4><a href="./catalog_end_page.html">ООО Строй-сервис монтаж</a></h4>
@@ -110,7 +113,7 @@
     
       <tr>
         <td class="col-md-3">
-          <img alt="Логотип" src="static/img/home_icon_100x100.png">
+          <img alt="Логотип" src="./static/img/home_icon_100x100.png">
         </td>
         <td>
           <h4><a href="./catalog_end_page.html">ООО ЖБИ-3</a></h4>
@@ -125,9 +128,23 @@
     </tbody>
   </table>
 </div>
-    <div class="col-md-2 text-center" style="margin: inherit">
-      <button class="btn btn-default">Оставьте заявку</button>
-    </div>
+    <a href="./index.html" class="btn btn-default" role="button">
+        Оставить заявку
+    </a>
+  </div>
+  <div class="row text-center">
+  <ul class="pagination">
+    <li><a href="#">&laquo;</a></li>
+    <li><a href="#">1</a></li>
+    <li><a href="#">2</a></li>
+    <li><a href="#">3</a></li>
+    <li><a href="#">4</a></li>
+    <li><a href="#">5</a></li>
+    <li><a href="#">&raquo;</a></li>
+  </ul>
+  </div>
+  <div class="col-md-2 col-md-offset-2">
+    <a href="./index.html">Оставьте заявку</a>
   </div>
 </div>
 <div style="background-color: gainsboro; width: 100%; margin-top: 5%; padding: 4px; border-left-width: 0px;
@@ -138,7 +155,8 @@
   </div>
     <div class="row">
       <div class="col-md-6" style="padding: 4%">
-        <p>Для доступа к телефонам покупателей заполните форму или позвоните нам +7 999 888 77 66</p>
+        <p>Для доступа к телефонам покупателей заполните форму или позвоните нам
+        <span class="text-nowrap">+7 999 888 77 66</span></p>
         <p>Текст с дополнительной информацией по условиям сотрудничества. Возможно стоит вынести
           на отдельную страницу Текст с дополнительной информацией по условиям сотрудничества.
           Возможно стоит вынести на отдельную страницу.</p>
@@ -171,5 +189,5 @@
 
 
     <!-- Bootstrap Core JavaScript -->
-  <script src="./static/js/bootstrap.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
